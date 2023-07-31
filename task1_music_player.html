@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player with the help of HTML , CSS  and JavaScript </title>
+
+    <link rel="stylesheet" href="styleee.css">   <!--Using external CSS method-->
+</head>
+<body>
+
+<audio src="" id="audio"></audio>      <!--For music-->
+<div class="container">
+    <div class="music-player">
+        <h1 class="music-name">Song one</h1>
+        <p class="artist-name">Artist </p>
+
+ <div class="disk "></div>
+       
+ <div class="song-slider">      
+
+            <input type="range" value="0" class="seek-bar">
+            <span class="current-time">00:00</span>
+            <span class="song-duration">00:00</span>
+        </div> 
+
+        <div class="controls">
+            <button class="btn backward-btn"><img src="/images/previous.png" alt=""></button>
+            <button class="play-btn pause">
+                <span></span>
+                <span></span>
+            </button>
+            <button class="btn forward-btn"><img src="/images/next.png" alt=""></button>
+
+        </div>  
+    </div>
+    <script src="data.js"></script>
+    <script src="music_player.js"></script>
+</body>
+</html>
